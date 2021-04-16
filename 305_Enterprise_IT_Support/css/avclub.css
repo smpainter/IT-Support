@@ -1,0 +1,73 @@
+body {
+    background: #666666;
+}
+label, .jeremylabel {
+    width: 26.666666%; /* 10em = 160px = 160 / 600 */
+    float: left;
+    padding-right: 16px;
+    padding-bottom: 8px;
+}
+#data input {
+    float: left;
+    width: 40%; /* 15em = 240px = 240 / 600 = 40% */
+    margin-bottom: 8px;
+}
+br {
+    clear: left;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+.jumbotron {
+    font-size: 3em;
+}
+@media all and (max-width:600px) {
+	th, td
+		{
+		display: list-item;
+		list-style-type: none;
+		font-size: 1.5em;
+		}
+	tr:nth-child(even) {
+		background: #CCCCCC;
+		}
+	tr:nth-child(odd) {
+		background: #FFFFFF;
+		}
+}
+
+@media all and (max-width:480px) {
+    label {
+        width: 90%;
+    }
+    img {
+        display: none;
+    }
+    body{
+        font-size: 1.25em;
+    }
+    #buttons label {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+    }
+    #buttons input{
+        font-size: 1.5em;
+        width: 90%;
+    }
+    #room, #problem_type, #comment{
+        width: 90%;
+        margin-bottom: 8px;
+        font-size: 1.25em;
+    }
+    #data input{
+        width: 90%;
+        margin-bottom: 8px;
+        font-size: 1.25em;
+    }
+    select{
+        font-size: 2em;
+    }
+}
